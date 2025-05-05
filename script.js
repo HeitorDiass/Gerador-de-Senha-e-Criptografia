@@ -1,10 +1,9 @@
 function showTab(tabId) {
     let tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => tab.style.display = 'none'); // Hide all tabs
-    document.getElementById(tabId).style.display = 'block'; // Show the selected tab
+    tabs.forEach(tab => tab.style.display = 'none'); 
+    document.getElementById(tabId).style.display = 'block'; 
 }
 
-// Set the default tab to show
 window.onload = function() {
     showTab('home');
 };
