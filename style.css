@@ -1,0 +1,126 @@
+/* Definir fontes e cores */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #25283b;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #5a6d7f;
+}
+
+/* Estilos para as abas */
+.tab-content {
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#home {
+    display: block;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #25283b;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #25283b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #5a6d7f;
+}
+
+#encryptedResult, #decryptedResult {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #4caf50;
+}
+
+/* Adicionando um fundo sutil */
+body {
+    background: linear-gradient(135deg, #f6f7fb, #e0e4e8);
+}
+
+/* Animação de transição suave para as abas */
+.tab-content {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilos para a lista de métodos */
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+ul li {
+    background: #25283b;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* Ajuste de responsividade */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    input, select {
+        width: 90%;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha e Criptografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="tab-link" onclick="showTab('home')">Início</a>
+        <a href="#" class="tab-link" onclick="showTab('crypt')">Criptografar</a>
+        <a href="#" class="tab-link" onclick="showTab('decrypt')">Descriptografar</a>
+        <a href="#" class="tab-link" onclick="showTab('methods')">Métodos de Criptografia</a>
+    </div>
+
+    <div id="home" class="tab-content">
+        <h2>Bem-vindo ao Gerador de Senha e Criptografia</h2>
+        <p>Use o menu para criptografar e descriptografar senhas.</p>
+    </div>
+
+    <div id="crypt" class="tab-content">
+        <h2>Criptografar Senha</h2>
+        <input type="text" id="userPassword" placeholder="Digite a senha">
+        <select id="cryptMethod">
+            <option value="base64">Base64</option>
+            <option value="reverse">Reverso</option>
+            <option value="cesar">César</option>
+            <option value="xor">XOR</option>
+        </select>
+        <button onclick="encryptPassword()">Criptografar</button>
+        <div id="encryptedResult"></div>
+    </div>
+
+    <div id="decrypt" class="tab-content">
+        <h2>Descriptografar Senha</h2>
+        <input type="text" id="encryptedPassword" placeholder="Digite a senha criptografada">
+        <select id="decryptMethod">
+            <option value="base64">Base64</option>
+            <option value="reverse">Reverso</option>
+            <option value="cesar">César</option>
+            <option value="xor">XOR</option>
+        </select>
+        <button onclick="decryptPassword()">Descriptografar</button>
+        <div id="decryptedResult"></div>
+    </div>
+
+    <div id="methods" class="tab-content">
+        <h2>Métodos de Criptografia</h2>
+        <ul>
+            <li>Base64</li>
+            <li>César</li>
+            <li>XOR</li>
+            <li>Reverso</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
